@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="tv-shows.css">
+    <link rel="stylesheet" href="contact.css">
     <title>Netflix Clone</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -20,42 +20,52 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="section tv-shows" id="tvShows">
-          <h2 class="section-title">TV Shows</h2>
-          <div class="grid grid-4-up">
-            <div class="grid-item">
-              <a href="#"><img src="Photo/tv-shows 1.jpg" alt="TV Show 1"></a>
-              <h3>Griselda: Limited Series</h3>
+
+    <main class="try">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or concerns, please feel free to contact us using the form below or by emailing us at <a href="netflixclone@gmail.com">netflixclone@gmail.com</a>.</p>
+        <br><br>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
             </div>
-            <div class="grid-item">
-              <a href="#"><img src="Photo/tv-shows 2.jpg" alt="TV Show 2"></a>
-              <h3>The Tourist: Season 1</h3>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
             </div>
-            <div class="grid-item">
-              <a href="#"><img src="Photo/tv-shows 3.jpg" alt="TV Show 3"></a>
-              <h3>One Day: Limited Series</h3>
+
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
             </div>
-            <div class="grid-item">
-              <a href="#"><img src="Photo/tv-shows 4.jpg" alt="TV Show 4"></a>
-              <h3>Alexander: The Making of a God: Season 1</h3>
+
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
             </div>
-            <div class="grid-item">
-                <a href="#"><img src="Photo/tv-shows 5.jpg" alt="TV Show 5"></a>
-                <h3>Fool Me Once: Limited Series</h3>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
             </div>
-            <div class="grid-item">
-                <a href="#"><img src="Photo/tv-shows 6.jpg" alt="TV Show 6"></a>
-                <h3>American Nightmare: Season 1</h3>
-            </div>
-            <div class="grid-item">
-                <a href="#"><img src="Photo/tv-shows 7.jpg" alt="TV Show 7"></a>
-                <h3>House, M.D.: Season 1</h3>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer>
+
+            <button type="submit" class="button">Submit</button>
+        </form>
+
+        <div id="message-sent" hidden>
+            <p>Thank you for your message! We will get back to you as soon as possible.</p>
+        </div>
+
+        <div id="message-error" hidden>
+            <p>Oops! Something went wrong. Please try again later.</p>
+        </div>
+    </main>
+
+
+
+    <footer>
         <footer>
             <div class="footer-container">
                 <div class="footer-links">
